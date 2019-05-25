@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Label ordering must match values -->
+    <array name="pref_language_option_labels">
+        <item>@string/pref_lang_label_hau_yor</item>
+        <item>@string/pref_lang_label_eng_yor</item>
+    </array>
+
+    <array name="pref_language_option_values">
+        <item>@string/pref_lang_hau_yor_value</item>
+        <item>@string/pref_lang_eng_yor_value</item>
+    </array>
+
+</resources>

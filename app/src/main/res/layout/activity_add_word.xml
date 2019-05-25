@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddWordActiviity"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back_white_24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="8dp"
+                    android:onClick="closeSearch"
+                    android:layout_marginRight="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add New Word"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the details of the new word you just learnt"
+            android:textColor="@color/textColorPrimary"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="@dimen/padding_8dp"/>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@drawable/rectangle_bg"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="16dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/category_label"-->
+                <!--android:text="Category"-->
+                <!--/>-->
+            <!--<Spinner-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/new_word_category"-->
+                <!--android:padding="@dimen/padding_8dp"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rectangle_bg"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+                <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="New Word: English"
+                android:id="@+id/new_word_english"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rectangle_bg"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="New Word: Hausa"
+                android:id="@+id/new_word_hausa"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rectangle_bg"
+            android:orientation="horizontal"
+            android:padding="16dp">
+                <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yoruba Meaning"
+                android:id="@+id/new_word_yoruba"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding_8dp"
+            android:text="Add"
+            android:background="@drawable/rectangle_background"/>
+    </LinearLayout>
+
+
+</LinearLayout>
